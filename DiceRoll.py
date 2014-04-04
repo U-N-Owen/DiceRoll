@@ -3,6 +3,12 @@
 import random
 
 # ----------- Main Program here ----------
-dieoutcome = random.randint(1,6)
-print "Here's a number between 1 and 6 |", dieoutcome
-
+print "Welcome to Misha's amazing dice rolling program!"
+print "\n"
+numberofsides = raw_input("How many sides does the die you want to roll have? | ")
+try:
+    numberofsides = int(numberofsides)
+    dieoutcome = random.randint(1,numberofsides)
+    print "Here's the result of the roll |", dieoutcome
+except:
+    print "That's not a number, try again later"
