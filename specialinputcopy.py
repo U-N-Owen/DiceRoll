@@ -16,7 +16,7 @@ def int_input(prompt):
             incorrect = 0
             return number
         except:
-            number = raw_input("That's not a number, try again| ")
+            number = raw_input("That's not a number, try again (press enter key to continue)")
             incorrect = 1
 
 def float_input(propmpt):
